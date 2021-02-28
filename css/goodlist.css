@@ -1,0 +1,370 @@
+header {
+    width: 100%;
+    height: 40px;
+}
+
+header .header {
+    height: 40px;
+    background-color: #e3e4e5;
+}
+
+header .header ul li {
+    float: left;
+    background: url(../img/header_border.png) no-repeat right;
+}
+
+header .header ul li a {
+    font-size: 14px;
+    color: #999999;
+    display: block;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+header .header ul li a:hover {
+    color: #e61c27;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+/*  */
+#search {
+    width: 100%;
+    height: 120px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+#search .search {
+    margin-top: 10px;
+    height: 120px;
+    border-bottom: 1px solid #999999;
+    box-shadow: 5px 12px 20px 0px #666;
+    background-color: #fff;
+}
+
+.search .dog {
+    width: 250px;
+    height: 120px;
+    padding: 18px 42px;
+    transform: translate(40px, -38px);
+}
+
+.search .dog img {
+    width: 188px;
+    height: 120px;
+}
+
+.search .kuang {
+    padding: 0;
+    margin-top: 32px;
+    /* margin-left: 75px; */
+    width: 688px;
+    transform: translate(20px);
+}
+
+.search .kuang input {
+    border: 2px solid #e61c27;
+    height: 40px;
+    border-right: none;
+}
+
+.search .kuang .btn {
+    width: 75px;
+    height: 40px;
+    border: 2px solid #e61c27;
+    outline: none;
+    background-color: #e61c27;
+    padding: 0px;
+}
+
+.search .kuang .btn i {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.search .middle {
+    width: 988px;
+    height: 118px;
+    padding-left: 75px;
+    background-color: #fff;
+    /* background-color: blueviolet; */
+}
+
+
+.search .middle .to_car {
+    width: 148px;
+    height: 40px;
+    border: 1px solid #e61c27;
+    transform: translate(50px, 32px);
+    color: #e61c27;
+}
+
+.search .middle .to_car i {
+    color: #e61c27;
+    font-weight: 900;
+}
+
+.search .middle .to_car .count {
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    background-color: #e61c27;
+    font-weight: 900;
+    color: #ffffff;
+    border-radius: 8px;
+    transform: translate(-6px, -8px);
+}
+
+.search .middle #xiangji {
+    position: absolute;
+    top: 10px;
+    right: 95px;
+    z-index: 10;
+    font-size: 18px;
+    color: #999999;
+}
+
+.search .middle #xiangji:hover {
+    color: #e61c27;
+}
+
+/*  */
+
+#goods {
+    width: 100%;
+    height: 2000px;
+    margin-top: 26px;
+    background: url(../img/goods_bg.png) repeat-y;
+    background-size: contain;
+}
+
+#goods .goods {
+    margin: auto;
+    height: 2000px;
+    /* border: 1px solid red; */
+}
+
+#goods .goods h3 {
+    width: 70%;
+    height: 88px;
+    margin: auto;
+    padding-top: 20px;
+    background-color: #f6f6f6;
+}
+
+#goods .goods h3 .txt {
+    margin-top: 4px;
+}
+
+#goods .goods h3 .txt .one {
+    font-size: 26px;
+    color: #d84961;
+    margin-left: 10px;
+}
+
+#goods .goods h3 .txt .two {
+    font-size: 14px;
+    color: #b5b5b5;
+    margin-left: 10px;
+}
+
+#goods .goods .list {
+    width: 1200px;
+    /* height: 1000px; */
+    /* border: 1px solid blue; */
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#goods .goods .list .row {
+    width: 230px;
+    height: 318px;
+    /* border: 1px solid pink; */
+    margin: 10px 0px;
+    padding: 20px 15px 20px 20px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#goods .goods .list .row img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 0 17.5px 20px 17.5px;
+    transition: all .3s;
+}
+
+#goods .goods .list .row .cap {
+    width: 195px;
+    height: 98px;
+}
+
+#goods .goods .list .row .cap .god {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 0 5px;
+    margin: 0 3px;
+    color: #ff943d;
+    border: 1px solid #ff943d;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+#goods .goods .list .row .cap .con {
+    height: 36px;
+    width: 195px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 9px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+
+#goods .goods .list .row .cap .price,
+i {
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #e23232;
+}
+
+#goods .goods .list .row:hover img {
+    transform: scale(1.08);
+}
+
+#goods .goods .list .row:hover {
+    box-shadow: 0px 1px 5px 2px #999;
+}
+
+.page {
+    height: 40px;
+    /* border: 1px solid skyblue; */
+    width: 60%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.page p {
+    width: 70px;
+    text-align: center;
+}
+
+.page input {
+    border: 1px solid #000;
+    padding-left: 20px;
+}
+
+/*  */
+#copy {
+    width: 100%;
+    height: 200px;
+    background-color: #eaeaea;
+}
+
+#copy .copy {
+    transform: translateY(60px);
+    clear: both;
+    height: 200px;
+    margin: auto;
+    /* background-color: pink; */
+}
+
+#copy .copy .one {
+    display: flex;
+    width: 1200px;
+    justify-content: space-evenly;
+    height: 20px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#copy .copy p a {
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+    margin: 0px 5px;
+}
+
+#copy .copy p a:hover {
+    color: #de291f;
+}
+
+#copy .copy p {
+    width: 1200px;
+    height: 20px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#copy .copy p i {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/copy精灵.png);
+    width: 15px;
+    height: 12px;
+    margin-top: -1px
+}
+
+#copy .copy p .y {
+    background-position: -108px -155px;
+}
+
+#copy .copy p .e {
+    background-position: -168px -155px;
+}
+
+#copy .copy p .s {
+    background-position: -148px -155px;
+}
+
+#copy .copy p .f {
+    background-position: -128px -155px;
+}
+
+#copy .copy p .fi {
+    background-position: -108px -171px;
+}
+
+#copy .copy p span {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../img/copy精灵.png) no-repeat;
+}
+
+#copy .copy p span:nth-child(1) {
+    background-position: -205px 0px;
+}
+
+#copy .copy p span:nth-child(2) {
+    background-position: -205px -37px;
+}
+
+#copy .copy p span:nth-child(3) {
+    background-position: -205px -74px;
+}
+
+#copy .copy p span:nth-child(4) {
+    background-position: -205px -111px;
+}
+
+#copy .copy p span:nth-child(5) {
+    background-position: -205px -148px;
+}
+
+#copy .copy p span:nth-child(6) {
+    background-position: 0px -155px;
+}
+
+/*  */

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东</title>
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./swiper/package/swiper-bundle.min.js"></script>
+    <script src="./js/ajax.js"></script>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./swiper/package/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="./css/swiper.min.css"> -->
+    <link rel="stylesheet" href="./css/xinpinlunbo.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <div id="m_top">
+        <div class="m_top content">
+            <h3 class="fl">
+                <a href="">
+                    <img src="./img/header_logo.png" alt="">
+                </a>
+            </h3>
+
+            <div class="middle fl">
+                <div>
+                    <img src="./img/header1.jpg.webp" alt="">
+                </div>
+                <div><img src="./img/header2.jpg.webp" alt=""></div>
+                <div><img src="./img/header3.webp" alt=""></div>
+            </div>
+
+            <h3 class="fr">
+                <img src="./img/header_right.png" alt="" style="width: 500px; height: 100px;">
+            </h3>
+        </div>
+    </div>
+    <!-- header -->
+    <header>
+        <div class="header content">
+            <ul class="fr">
+                <li><a href="./html/login.html" target="_blank">你好，请登录</a></li>
+                <li><a href="./html/register.html" style="color:#E1251B" target="_blank">免费注册</a></li>
+                <li><a href="">我的订单</a></li>
+                <li class="Jdong" style="position: relative;"><a href="./html/goodlist.html">京东商品<i
+                            class="iconfont icon-xiangshang"></i></a>
+                    <div class="nav">
+                        <!-- <a href="">待处理订单</a> -->
+                    </div>
+                </li>
+                <li><a href="">京东会员</a></li>
+                <li class="qiye" style="position: relative;"><a href="" style="color:#E1251B">企业采购<i
+                            class="iconfont icon-xiangshang"></i></a>
+                    <div class="nav1">
+                        <!-- <a href="">待处理订单</a> -->
+                    </div>
+                </li>
+                <li><a href="">客户服务<i class="iconfont icon-xiangshang"></i></a></li>
+                <li><a href="">网站导航<i class="iconfont icon-xiangshang"></i></a></li>
+                <li><a href="">手机京东</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--  -->
+    <div id="search">
+        <div class="search content">
+            <h3 class="dog fl">
+                <a href="">
+                    <img src="./img/logo.gif" alt="">
+                </a>
+            </h3>
+            <div class="middle fl">
+                <div class="col-lg-6 fl kuang">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="苏泊尔电磁炉">
+                        <i class="iconfont icon-zhaoxiangji" id="xiangji">
+                        </i>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="iconfont icon-sousuo"></i></button>
+                        </span>
+                    </div>
+                </div>
+
+                <button class="car"><i class="iconfont icon-gouwuche"></i><span class="count">0</span>我的购物车
+
+                </button>
+
+                <ul style="clear: both; margin-left: 8px;" class="smallul">
+                    <li><a href="" style="color:#e61c27">购国际好物</a></li>
+                    <li><a href="">服饰美家</a></li>
+                    <li><a href="">红奥利奥</a></li>
+                    <li><a href="">汽车年货</a></li>
+                    <li><a href="">居家健身</a></li>
+                    <li><a href="">服饰焕新</a></li>
+                    <li><a href="">购京东电脑</a></li>
+                    <li><a href="">立春节气</a></li>
+                    <li><a href="">二手手机</a></li>
+                </ul>
+
+                <ul style="clear: both; transform: translateX(-20px);" class="bigul">
+                    <li><a href="" style="color: #e61c27;">秒杀</a></li>
+                    <li><a href="" style="color: #e61c27;">优惠券</a></li>
+                    <li><a href="">PLUS会员</a></li>
+                    <li><a href="">品牌闪购</a></li>
+                    <li><a href="">拍卖</a></li>
+                    <li><a href="">京东家电</a></li>
+                    <li><a href="">京东家居</a></li>
+                    <li><a href="">京东超市</a></li>
+                    <li><a href="">京东生鲜</a></li>
+                    <li><a href="">京东国际</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  -->
+    <div id="banner">
+        <div class="banner content">
+            <div class="menu fl">
+                <ul>
+                    <li><a href="">家用电器</a></li>
+                    <li><a href="">手机<span>/</span>运营商<span>/</span>数码</a></li>
+                    <li><a href="">电脑<span>/</span>办公<span></li>
+                    <li><a href="">家居<span>/</span>家具<span>/</span>家装<span>/</span>厨具</a></li>
+                    <li><a href="">男装<span>/</span>女装<span>/</span>童装<span>/</span>内衣</a></li>
+                    <li><a href="">美妆<span>/</span>个护清洁<span>/</span>宠物</a></li>
+                    <li><a href="">女鞋<span>/</span>箱包<span>/</span>钟表<span>/</span>珠宝</a></li>
+                    <li><a href="">男鞋<span>/</span>运动<span>/</span>户外</a></li>
+                    <li><a href="">房产<span>/</span>汽车<span>/</span>汽车用品</a></li>
+                    <li><a href="">母婴<span>/</span>玩具乐器</a></li>
+                    <li><a href="">食品<span>/</span>酒类<span>/</span>生鲜<span>/</span>特产</a></li>
+                    <li><a href="">艺术<span>/</span>礼品鲜花<span>/</span>农植绿蔬</a></li>
+                    <li><a href="">医药保健<span>/</span>计生情趣</a></li>
+                    <li><a href="">图书<span>/</span>文娱<span>/</span>教育<span>/</span>电子书</a></li>
+                    <li><a href="">机票<span>/</span>旅游<span>/</span>酒店<span>/</span>生活</a></li>
+                    <li><a href="">理财<span>/</span>众筹<span>/</span>白条<span>/</span>保险</a></li>
+                    <li><a href="">安装<span>/</span>维修<span>/</span>清洗<span>/</span>二手</a></li>
+                </ul>
+            </div>
+            <!-- 轮播 -->
+            <div class="bigbanner">
+                <div class="swiper-container fl" id="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/lunbo1.jpg.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/lunbo2.jpg.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/lunbo3.jpg.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/lunbo4.jpg.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/lunbo5.jpg.webp" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next button"></div>
+                    <div class="swiper-button-prev button1"></div>
+                </div>
+            </div>
+            <div class="right fl">
+                <div class="swiper-container" id="swiper-container1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-color: red;">Slide 1</div>
+                        <div class="swiper-slide" style="background-color: yellow;">Slide 2</div>
+                        <div class="swiper-slide" style="background-color: green;">Slide 3</div>
+                    </div>
+                </div>
+
+                <div class="swiper-container" id="swiper-container2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-color: honeydew;">Slide 4</div>
+                        <div class="swiper-slide" style="background-color: rebeccapurple;">Slide 5</div>
+                        <div class="swiper-slide" style="background-color: lemonchiffon;">Slide 6</div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="swiper-container" id="swiper-container3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-color: lightcoral;">Slide 7</div>
+                        <div class="swiper-slide" style="background-color: forestgreen;">Slide 8</div>
+                        <div class="swiper-slide" style="background-color: seagreen;">Slide 9</div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+            <div class="list fl">
+                <h3>
+                    <img src="./img/banner-right.png" alt="" width="190px
+                    ">
+                </h3>
+                <div class="lists">
+                    <a href=""><i class="iconfont icon-huafei" style="color: #66b0e7;"></i><span>话费</span></a>
+                    <a href=""><i class="iconfont icon-feiji-copy" style="color: #f2a53a;"></i><span>机票</span></a>
+                    <a href=""><i class="iconfont icon-jiudian" style="color: #43d7c8;"></i><span>酒店</span></a>
+                    <a href=""><i class="iconfont icon-youxi" style="color: #f3a63d;"></i><span>游戏</span></a>
+                    <a href=""><i class="iconfont icon-jiayou" style="color:#42d7c7"></i><span>加油卡</span></a>
+                    <a href=""><i class="iconfont icon-huoche" style="color:#eb6960"></i><span>火车票</span></a>
+                    <a href=""><i class="iconfont icon-zhongchou" style="color: #4ad9ca;"></i><span>众筹</span></a>
+                    <a href=""><i class="iconfont icon-icon-test" style="color: #5aaae5;"></i><span>理财</span></a>
+                    <a href=""><i class="iconfont icon-baitiao" style="color: #ec7168;"></i><span>白条</span></a>
+                    <a href=""><i class="iconfont icon-dianyingpiao" style="color: #eb685f;"></i><span>电影票</span></a>
+                    <a href=""><i class="iconfont icon-qiyegouruzhu" style="color: #65afe6;"></i><span>企业购</span></a>
+                    <a href=""><i class="iconfont icon-lipinka" style="color:#f2a132"></i><span>礼品卡</span></a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="showtime fl">
+                    <a href="#">
+                        <div class="flash-box1-title">京东秒杀</div>
+                        <img src="./img/shandian.png" alt="">
+                        <div class="flash-box1-time">本场距离结束还剩</div>
+                        <div class="timeone">
+                            <span class="hour" style="  background-color: #2f3430;;">55</span>
+                            <span style="width: 20px;">:</span>
+                            <span class="min" style="  background-color: #2f3430;;">55</span>
+                            <span style="width: 20px;">:</span>
+                            <span class="second" style="  background-color: #2f3430;;">55</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-container fl" id="shouji">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-color: sandybrown;">Slide 1</div>
+                        <div class="swiper-slide" style="background-color: red;">Slide 2</div>
+                        <div class="swiper-slide" style="background-color: rebeccapurple;">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">Slide 10</div>
+                        <div class="swiper-slide">Slide 11</div>
+                        <div class="swiper-slide">Slide 12</div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper-container fl" id="shoujiyou">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-color: sandybrown;">Slide 1</div>
+                        <div class="swiper-slide" style="background-color: blueviolet;">Slide 2</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  右部导航-->
+    <div class="r_nav" style="display: none;">
+        <ul>
+            <li class="one">
+                <span>京东</span>
+                <span>秒杀</span>
+            </li>
+            <li class="r_nav_nianhuo">
+                <img src="./img/年货.gif" alt="">
+            </li>
+            <li class="three">
+                <span>特色</span>
+                <span>优选</span>
+            </li>
+            <li>
+                <span class="four">为你</span>
+                <span>推荐</span>
+            </li>
+            <li>
+                <span class="iconfont icon-jingdongdaojia"></span>
+                <span>客服</span>
+            </li>
+            <li>
+                <span class="iconfont icon-writing"></span>
+                <span>反馈</span>
+            </li>
+            <li class="last">
+                <span>^</span>
+                <span>顶部</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 渲染 -->
+    <div id="main">
+        <div class="main_nianhuo content">
+            <div class="con fl">
+                <!-- <div class="nianhuo_list fl">
+                    <div>
+                        <img src="./img/logo.gif" alt="">
+                    </div>
+                    <div style="background-color: #ffecba; ">
+                        <h3>至高补贴200元</h3>
+                        <p>5G购机补贴</p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="con_r fl">
+                <a href="">
+                    <img src="./img/con_r.png">
+                </a>
+                <a href="">
+                    <img src="./img/con_r.png">
+                </a>
+                <a href="">
+                    <img src="./img/con_r.png">
+                </a>
+                <a href="">
+                    <img src="./img/con_r.png">
+                </a>
+            </div>
+        </div>
+
+        <div class=" main_tese content">
+            <h3>特色优选</h3>
+            <i class="bg"></i>
+            <div class="main_tese_bot">
+                <a class="left fl nice_goods_logo nice_bg" href="//fxhh.jd.com" target="_blank">
+                    <div class="logo_container">
+                        <div class="logo_text">
+                            "探索新生活"
+                            <i></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="right fl">
+                    <div class="goods_list">
+                        <!-- <a href="#" class="good">
+                            <div class="good_name">静心石，和田玉，手镯</div>
+                            <div class="good_img">
+                                <div class="img">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="jd_container content">
+                <div class="box1 fl">
+                    <div class="box1_hd">
+                        <a href="//new.jd.com" class="box1_t" target="_blank">
+                            <h3>新品首发</h3>
+                            <i></i>
+                        </a>
+                        <section class="pc-banner">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-slide-center none-effect"><a href="#"><img
+                                                src="img/top_hero_conc_2017.jpg"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="./img/top_hero_cs_2017.jpg"></a>
+                                    </div>
+                                    <div class="swiper-slide"><a href="#"><img src="/img/top_hero_cw_im17.jpg"></a>
+                                    </div>
+                                    <div class="swiper-slide"><a href="#"><img src="/img/top_hero_hakko.jpg"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img
+                                                src="/img/top_hero_karadacalpis_im02.jpg"></a></div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <!-- <div class="button">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div> -->
+                        </section>
+                    </div>
+                </div>
+                <div class="box1 fl">
+                    <div class="box1_hd">
+                        <a href="//top.jd.com" class="box1_t" target="_blank">
+                            <h3>排行榜</h3>
+                            <i></i>
+                        </a>
+                        <div class="head">
+                            <a class="one" href="//top.jd.com?cateId=653" target="_blank" class="active">袜子</a>
+                            <a class="two" href="//top.jd.com?cateId=9862" target="_blank">装修服务</a>
+                            <a href="//top.jd.com?cateId=9861" target="_blank">装饰材料</a>
+                            <a href="//top.jd.com?cateId=9860" target="_blank">墙地面材料</a>
+                        </div>
+                        <div class="paihang">
+                            <!-- <div class="top">
+                                <img src="./img/top1.png" alt="">
+                                <img src="" alt="">
+                                <span></span>
+                            </div>
+                            <div class="top">
+                                <img src="./img/top2.png" alt="">
+                                <img src="" alt="">
+                                <span></span>
+                            </div>
+                            <div class="top">
+                                <img src="./img/top3.png" alt="">
+                                <img src="" alt="">
+                                <span></span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box1 fl">
+                    <div class="box1_hd">
+                        <a href="//haodian.jd.com" class="box1_t" target="_blank">
+                            <h3>逛好店</h3>
+                            <i></i>
+                        </a>
+                        <img src="./img/逛好店.png" alt="" height="280px" style="cursor: pointer;">
+                    </div>
+                </div>
+                <div class="box1 fl">
+                    <div class="box1_hd">
+                        <a href="//a.jd.com" class="box1_t" target="_blank">
+                            <h3>领券中心</h3>
+                            <i></i>
+                        </a>
+                        <img src="./img/领券中心.png" alt="" height="280px" style="cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="foryou">
+            <div class="foryou content">
+                <h3>
+                    <span></span> 为你推荐 <span></span>
+                </h3>
+                <div class="for_list">
+                    <a href="">
+                        <span class="active">精选</span>
+                        <span class="active1">猜你喜欢</span>
+                    </a>
+                    <a href="">
+                        <span>智能先锋</span>
+                        <span>大电器城</span>
+                    </a>
+                    <a href="">
+                        <span>居家优品</span>
+                        <span>品质生活</span>
+                    </a>
+                    <a href="">
+                        <span>超市百货</span>
+                        <span>百货生鲜</span>
+                    </a>
+                    <a href="">
+                        <span>时尚达人</span>
+                        <span>美妆穿搭</span>
+                    </a>
+                    <a href="">
+                        <span>进口好物</span>
+                        <span>京东国际</span>
+                    </a>
+                </div>
+                <div class="detali">
+                    <!-- <div class="del_good">
+                        <img src="" alt="">
+                        <p></p>
+                        <span><i></i></span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+            <div class="mod content">
+                <ul>
+                    <li>
+                        <div class="mod_unit">
+                            <h5 style="background-position: 0 -192px;">多</h5>
+                            <p>品类齐全，轻松购物</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mod_unit">
+                            <h5 style="background-position: -41px -192px;">快</h5>
+                            <p>多仓直发，急速快送</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mod_unit">
+                            <h5 style="background-position: -82px -192px;">好</h5>
+                            <p>正品行货，精致服务</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mod_unit">
+                            <h5 style="background-position: -123px -192px;">省</h5>
+                            <p>天天低价，畅选无忧</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="list content">
+                <dl style="transform: translate(0px,140px);">
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>会员介绍</dd>
+                    <dd>生活旅行</dd>
+                    <dd>常见问题</dd>
+                    <dd>大家电</dd>
+                    <dd>联系客服</dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>上门自提</dd>
+                    <dd>211方式</dd>
+                    <dd>配送服务查询</dd>
+                    <dd>配送费收取标准</dd>
+                    <dd>海外配送</dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>货到付款</dd>
+                    <dd>在线支付</dd>
+                    <dd>分期付款</dd>
+                    <dd>公司转账</dd>
+                </dl>
+                <dl>
+                    <dt>售货服务</dt>
+                    <dd>售后政策</dd>
+                    <dd>价格保护</dd>
+                    <dd>退款说明</dd>
+                    <dd>返修/退换货</dd>
+                    <dd>取消订单</dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd>夺宝岛</dd>
+                    <dd>DIY装机</dd>
+                    <dd>延保服务</dd>
+                    <dd>京东E卡</dd>
+                    <dd>京东通信</dd>
+                    <dd>京鱼座智能</dd>
+                </dl>
+                <dl>
+                    <dt style="text-align: center;">京东自营覆盖区县</dt>
+                    <dd style="color: #666;">京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务</dd>
+                    <a href="//help.jd.com" target="_blank">查看详情></a>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- -------版权------ -->
+    <div id="copy">
+        <div class="copy content">
+            <p class="one">
+                <a href="">关于我们</a>
+                <a href="">联系我们</a>
+                <a href="">联系客服</a>
+                <a href="">合作招商</a>
+                <a href="">商家帮助</a>
+                <a href="">营销中心</a>
+                <a href="">手机京东</a>
+                <a href="">友情链接</a>
+                <a href="">销售联盟</a>
+                <a href="">京东社区</a>
+                <a href="">风险监测</a>
+                <a href="">隐私政策</a>
+                <a href="">京东公益</a>
+                <a href="">English Site</a>
+                <a href="">Media & IR</a>
+            </p>
+            <p>
+                <a href="">京公安网备11000002000088号</a>
+                <a href="">京ICP备11041704号</a>
+                <a href="">互联网药品信息服务资格证编号(京)-经营性-2014-008</a>
+                <a href="">新出发京零 字第大120007号</a>
+            </p>
+            <p>
+                <a href="">互联网出版许可证编号新出网证(京)字150号</a>
+                <a href="">出版物经营许可证</a>
+                <a href="">网络文化经营许可证京网文[2014]2148-348号</a>
+                <a href="">违法和不良信息举报电话：4006561155</a>
+            </p>
+            <p>
+                <a href="">Coparight &copy;2004-2021 京东JD.com版权所有</a>
+                <a href="">消费者维权热线：4006067733</a>
+                <a href="">经营证照</a>
+                <a href="">(京)网协平台备字(2018)第00003号</a>
+                <a href="">营业执照</a>
+            </p>
+            <p>
+                <a href="">
+                    <i class="y"></i>
+                    Glabal Site
+                </a>
+                <a href="">
+                    <i class="e"></i>
+                    Poccnn
+                </a>
+                <a href="">
+                    <i class="s"></i>
+                    Situs Indonesia
+                </a>
+                <a href="">
+                    <i class="f"></i>
+                    Sitio de Espan
+                </a>
+                <a href="">
+                    <i class="fi"></i>
+                    Sitio de Espan
+                </a>
+            </p>
+            <p style="margin-bottom: 15px;">
+                <a href="">京东旗下网站：京东钱包</a>
+                <a href="">京东智联云</a>
+            </p>
+            <p>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+        </div>
+    </div>
+
+</body>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/tese_paihang.js"></script>
+<script src="./js/foryou.js"></script>
+
+</html>

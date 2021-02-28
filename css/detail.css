@@ -1,0 +1,446 @@
+header {
+    width: 100%;
+    height: 40px;
+}
+
+header .header {
+    height: 40px;
+    background-color: #e3e4e5;
+}
+
+header .header ul li {
+    float: left;
+    background: url(../img/header_border.png) no-repeat right;
+}
+
+header .header ul li a {
+    font-size: 14px;
+    color: #999999;
+    display: block;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+header .header ul li a:hover {
+    color: #e61c27;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+/*  */
+
+#search {
+    width: 100%;
+    height: 120px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+#search .search {
+    margin-top: 10px;
+    height: 120px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.search .dog {
+    width: 250px;
+    height: 120px;
+    padding: 18px 42px;
+    transform: translate(40px, -38px);
+}
+
+.search .dog img {
+    width: 188px;
+    height: 120px;
+}
+
+.search .kuang {
+    padding: 0;
+    margin-top: 32px;
+    /* margin-left: 75px; */
+    width: 688px;
+    transform: translate(20px);
+}
+
+.search .kuang input {
+    border: 2px solid #e61c27;
+    height: 40px;
+    border-right: none;
+}
+
+.search .kuang .btn {
+    width: 75px;
+    height: 40px;
+    border: 2px solid #e61c27;
+    outline: none;
+    background-color: #e61c27;
+    padding: 0px;
+}
+
+.search .kuang .btn i {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.search .middle {
+    width: 988px;
+    height: 118px;
+    padding-left: 75px;
+    background-color: #fff;
+    /* background-color: blueviolet; */
+}
+
+
+.search .middle .car {
+    width: 148px;
+    height: 40px;
+    border: 1px solid #e61c27;
+    transform: translate(50px, 32px);
+    color: #e61c27;
+}
+
+.search .middle .car i {
+    color: #e61c27;
+    font-weight: 900;
+}
+
+.search .middle .car .count {
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    background-color: #e61c27;
+    font-weight: 900;
+    color: #ffffff;
+    border-radius: 8px;
+    transform: translate(-6px, -8px);
+}
+
+.search .middle #xiangji {
+    position: absolute;
+    top: 10px;
+    right: 95px;
+    z-index: 10;
+    font-size: 18px;
+    color: #999999;
+}
+
+.search .middle #xiangji:hover {
+    color: #e61c27;
+}
+
+/*  */
+
+#ins {
+    width: 100%;
+    height: 40px;
+}
+
+#ins .ins {
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    /* background-color: burlywood; */
+}
+
+#ins .ins .left {
+    transform: translateX(-150px);
+    width: 400px;
+    height: 100%;
+    /* background-color: #e61c27; */
+    line-height: 40px;
+    text-align: center;
+}
+
+#ins .ins .right {
+    margin-left: 200px;
+    width: 400px;
+    height: 100%;
+    /* background-color: blue; */
+    line-height: 40px;
+    text-align: center;
+}
+
+
+
+
+
+/*  */
+#main {
+    width: 100%;
+    height: 650px;
+}
+
+#main .main {
+    height: 650px;
+    margin: auto;
+    /* background-color: blueviolet; */
+    padding: 50px 120px;
+    background-color: rgba(200, 200, 200, 0.4);
+}
+
+#main .main .big {
+    width: 450px;
+    height: 550px;
+}
+
+#main .main .big .img {
+    width: 452px;
+    height: 452px;
+    border: 1px solid #999;
+    position: relative;
+}
+
+#main .main .big .img img {
+    width: 450px;
+    height: 450px;
+}
+
+#main .main .big .img i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/enlarge_sprite.png);
+    background-position: 0px -24px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+#main .main .big .img_list {
+    width: 450px;
+    margin-top: 20px;
+    padding: 0px 30px;
+    position: relative;
+}
+
+#main .main .big .img_list .front {
+    display: inline-block;
+    width: 22px;
+    height: 32px;
+    background: url(../img/enlarge_sprite.png) no-repeat 0px -55px;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.mask {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    opacity: .4;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: move;
+    display: none;
+}
+
+.enlarge {
+    /* 容器 与背景图的比例为 1 ：2 */
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 280px;
+    left: 650px;
+    background-size: 750px 1000px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    /* background-image: url(../img/lunbo1.jpg.webp); */
+    display: none;
+}
+
+
+.goods_detail {
+    width: 1000px;
+    transform: translateY(30px);
+    margin: auto;
+}
+
+#main .main .big .img_list .last {
+    display: inline-block;
+    width: 22px;
+    height: 32px;
+    background: url(../img/enlarge_sprite.png) no-repeat -78px 0px;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    cursor: pointer;
+}
+
+#main .main .big .img_list img {
+    width: 58px;
+    height: 58px;
+    margin-right: 25px;
+}
+
+#main .main .big .img_list .active{
+    border: 2px solid red;
+}
+
+#main .main .deli {
+    width: 720px;
+    height: 450px;
+    /* background-color: chartreuse; */
+    /* border: 1px solid red; */
+    margin-left: 80px;
+}
+
+#main .main .deli .title {
+    font: 700 16px Arial, "microsoft yahei";
+    color: #666;
+    padding-top: 10px;
+    line-height: 28px;
+    margin-bottom: 20px
+}
+
+#main .main .deli .title img {
+    vertical-align: -2px;
+}
+
+#main .main .deli h5 {
+    color: #e4393c;
+    margin-bottom: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#main .main .deli .price {
+    margin-top: 20px;
+}
+
+#main .main .deli .price .one {
+    line-height: 22px;
+    /* float: left; */
+    padding-left: 10px;
+    font-family: simsun;
+    color: #999
+}
+
+#main .main .deli .price i {
+    font-size: 16px;
+    color: #e4393c;
+}
+
+#main .main .deli .price .two {
+    font-size: 22px;
+    color: #e4393c;
+    vertical-align: -1px;
+}
+
+#main .main .deli .work {
+    margin-top: 20px;
+}
+
+#main .main .deli .work span:nth-child(1) {
+    line-height: 22px;
+    /* float: left; */
+    padding-left: 10px;
+    font-family: simsun;
+    color: #999
+}
+
+#main .main .deli .work span:nth-child(1) i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/enlarge_sprite.png);
+    background-position: 40px -24px;
+    vertical-align: middle;
+}
+
+#main .main .deli .work span:nth-child(2) {
+    font-size: 14px;
+    color: #5e69ad;
+    /* border: 1px solid #7883c7; */
+}
+
+#main .main .deli .insert_car {
+    width: 300px;
+    height: 100px;
+    /* background-color: blueviolet; */
+    /* margin-top: 20px; */
+    padding: 20px 0px;
+}
+
+#main .main .deli .insert_car .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    outline: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 0px 10px;
+}
+
+#main .main .deli .insert_car .btn_w {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+#main .main .deli .insert_car .btn_d {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+#main .main .deli .insert_car .btn_lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+#main .main .deli .tip {
+    line-height: 22px;
+    /* float: left; */
+    padding-left: 10px;
+    font-family: simsun;
+    color: #999;
+    margin-top: 20px;
+}
+
+#main .main .deli .info .info_1 .one {
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    background: url(../img/enlarge_sprite.png) -44px -40px;
+    vertical-align: -2px;
+
+}
+
+#main .main .deli .info .info_2 .two {
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background: url(../img/enlarge_sprite.png) -45px -24px;
+    vertical-align: -2px;
+}
+
+#main .main .deli .info .info_3 .three {
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    background: url(../img/enlarge_sprite.png) -30px -24px;
+    vertical-align: -3px;
+}
+
+#main .main .deli .info:hover {
+    cursor: pointer;
+}
+
+#main .main .deli .info span {
+    margin: 0px 10px;
+}
+
+#main .main .deli .info span:hover em {
+    color: brown;
+}
